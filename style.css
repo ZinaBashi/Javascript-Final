@@ -1,0 +1,128 @@
+body{
+	font-family: 'Arimo', sans-serif;
+	color: white;
+}
+
+.container{
+
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: #f29c3c;
+	background-position: center;
+	margin: -8px;
+
+}
+
+.headline{
+	width: 90vw;
+	height: 40vh;
+	padding: 10px;
+	margin: 2%;
+	line-height: 1.5;
+
+}
+
+.top{
+	background-color: #63bd9e;
+	width: 100vw;
+	height: 40vh;
+	position: relative;
+	top: 100vh;
+	margin: -8px;
+}
+
+.inputContainer{
+
+	background-color: #ec97bf;
+	width: 100vw;
+	height: 24vh;
+	margin: -8px;
+	position: relative;
+	top: 99vh;
+	margin-bottom: -20px;
+	padding: 10px;
+
+}
+
+.bottom{
+	background-color: #63bd9e;
+	width: 100vw;
+	height: 43vh;
+	position: relative;
+	top: 100vh;
+	margin: -8px;
+	background-size: cover;
+}
+
+form{
+width: 50vw;
+position: relative;
+text-align: center;
+margin: 0 auto;
+margin-top: 20px;
+font-size: 100%;
+}
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+#poemRes{
+	top:  4vh;
+	width: 50vw;
+	height: 15vh;
+	position: relative;
+	margin: auto auto;
+	text-align: center;
+	padding: 3vh;
+}
+
+#poemResTwo{
+	width: 50vw;
+	height: 20vh;
+	position: relative;
+	/*padding: 10px;*/
+	margin: auto auto;
+	text-align: center;
+	padding: 3vh;
+}
+
+#popRes{
+	top: 3vh;
+	width: 50vw;
+	height: 15vh;
+	position: relative;
+	margin: auto auto;
+	text-align: center;
+	padding: 3vh;
+}
+
+#popResTwo{
+	width: 50vw;
+	height: 20vh;
+	/*top: -20px;*/
+	position: relative;
+	padding-bottom: 3vh;
+	margin: auto auto;
+	text-align: center;
+}
+@media screen and (min-width: 800px) {
+    body { font-size:200%;} /* Increase the font size */
+}
+/*@media screen and (min-width:1400px) {
+    html { padding:0 15%; } } /* Reduce the container width */
+
+@media screen and (min-width:1600px) {
+    body { font-size:155%; }  /* Increase the font size */
+}
+@media screen and (min-width:1800px) {
+    html { padding:0 20%; } /* Reduce the container width */
+}
