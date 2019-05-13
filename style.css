@@ -3,55 +3,122 @@ body{
 	color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container{
 
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background-color: #f29c3c;
-	background-position: center;
+/*	background-color: #f29c3c;*/
+/*	background-position: center;*/
 	margin: -8px;
+	margin-top: 0px;
 
 }
 
+
 .headline{
 	width: 90vw;
-	height: 40vh;
+	height: 15vh;
 	padding: 10px;
 	margin: 2%;
 	line-height: 1.5;
 
 }
 
+.description{
+
+width: 70vw;
+
+}
+
+#btn{
+
+	position: absolute;
+	width: 100vw;
+	height: 30px;
+	display: inline-block;
+	margin: auto auto;
+	text-align: center;
+	padding: 10px;
+	bottom: 10vh;
+}
+
+a{
+ text-decoration: white;
+}
+
+p {
+	font-size: 60px;
+	/*width: 35vw;*/
+	margin-left: 3%;
+	top: 20vh;
+	font-family: 'Arimo', sans-serif;
+/*	 color:  #f29c3c;*/
+	 line-height: 1;
+}
+
+h1 {
+	font-size: 57px;
+	 z-index: 2 !important;
+/*	 color:  #f29c3c;*/
+}
+/*
+#paper-canvas {
+	 z-index: 1 !important;
+}*/
+
+canvas{
+	margin-top: -4vh;
+	position: absolute;
+	z-index: -1;
+}
+
+#img1 {
+	float: left;
+	padding-left: 5%;
+	padding-top: 80px;
+}
+
+#img2 {
+	float: left;
+	padding-left: 5%;
+	position: relative;
+	padding-top: 5vh;
+}
+
 .top{
 	background-color: #63bd9e;
 	width: 100vw;
-	height: 40vh;
+	height: 43vh;
 	position: relative;
 	top: 100vh;
-	margin: -8px;
+	margin: -4px;
 }
 
 .inputContainer{
 
-	background-color: #ec97bf;
-	width: 100vw;
-	height: 24vh;
-	margin: -8px;
+	background-color: #ffcbdd;
+	width: 102vw;
+	height: 25vh;
+	margin: -4px;
 	position: relative;
-	top: 99vh;
+	top: 95vh;
 	margin-bottom: -20px;
-	padding: 10px;
+	padding: auto;
 
 }
 
 .bottom{
 	background-color: #63bd9e;
 	width: 100vw;
-	height: 43vh;
+	height: 40vh;
 	position: relative;
-	top: 100vh;
-	margin: -8px;
+	top: 95vh;
+	margin: -4px;
 	background-size: cover;
 }
 
@@ -62,16 +129,26 @@ text-align: center;
 margin: 0 auto;
 margin-top: 20px;
 font-size: 100%;
+padding-top: 2.5vh;
+}
+
+label {
+  font-size: 20px;
 }
 
 input[type=text], select {
+
+	top: 3vh;
   width: 50%;
-  padding: 12px 20px;
+  position: relative;
+  padding: 12px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300px;
 }
 
 
@@ -82,17 +159,30 @@ input[type=text], select {
 	position: relative;
 	margin: auto auto;
 	text-align: center;
+	/*font-size: 30px;*/
 	padding: 3vh;
+	font-family: 'Roboto', sans-serif;
 }
 
-#poemResTwo{
+#poemAuth{
 	width: 50vw;
-	height: 20vh;
-	position: relative;
-	/*padding: 10px;*/
-	margin: auto auto;
+	height: 5vh;
+	margin: auto; 
 	text-align: center;
-	padding: 3vh;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300px;
+}
+
+#poemLine{
+	width: 50vw;
+	height: 5vh;
+	margin: auto; 
+	text-align: center;
+	font-family: 'Arimo',
+	sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300px;
+
 }
 
 #popRes{
@@ -103,25 +193,103 @@ input[type=text], select {
 	margin: auto auto;
 	text-align: center;
 	padding: 3vh;
+    font-family: 'Roboto', sans-serif;
 }
 
-#popResTwo{
+#popAuth{
 	width: 50vw;
 	height: 20vh;
-	/*top: -20px;*/
-	position: relative;
+	/*top: -20px;
+	/*position: relative;
 	padding-bottom: 3vh;
-	margin: auto auto;
-	text-align: center;
+	margin: auto aut\\\;
+	text-align: center*/
 }
+
+/*DESKTOP*/
 @media screen and (min-width: 800px) {
-    body { font-size:200%;} /* Increase the font size */
+/*    body { font-size:200%;
+    }*/
+    p {
+    	font-size: 30px;
+    	line-height: 1.25;
+    }
+
+    #popAuth{
+   		font-size: 25px;
+   	}
+
+   	h2{
+   		font-size: 35px;
+   	}
+
+   	/*#poemRes{
+   		font-size: 25px;
+   	}
+*/
+   	#poemAuth #poemLine{
+   		font-size: 25px;
+   	}
+
+   	.top{
+   		padding: 1%;
+
+   	}
+   		.bottom{
+   		padding: 1%;
+   		
+   	}
+
+  /* 	#img1{
+   		display: none;
+   	}*/
+
+}
+
+/*MOBILE*/
+@media screen and (max-width: 800px) {
+/*    body { font-size:200%;
+    }*/
+
+    h1{
+    	font-size: 30px;
+    	line-height: 1px;
+    }
+    p {
+    	font-size: 16px;
+    	line-height: 1;
+    }
+
+    	.top{
+   		padding: 1%;
+
+   	}
+   		.bottom{
+   		padding: 1%;
+   		
+   	}
+
+   	#poemAuth{
+   		margin-bottom: 10px;
+   		line-height: 1;
+   	}
+
+   	#poemLine{
+   		line-height: 1;
+   	}
+
+   	#img1{
+   		display: none;
+   	}
+
+   	#img2 {display: none;}
+
 }
 /*@media screen and (min-width:1400px) {
     html { padding:0 15%; } } /* Reduce the container width */
 
 @media screen and (min-width:1600px) {
-    body { font-size:155%; }  /* Increase the font size */
+    body { font-size:100%; }  /* Increase the font size */
 }
 @media screen and (min-width:1800px) {
     html { padding:0 20%; } /* Reduce the container width */
